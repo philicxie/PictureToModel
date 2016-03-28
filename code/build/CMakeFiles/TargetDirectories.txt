@@ -1,0 +1,6 @@
+/home/yanjiasen4/pic2model/PictureToModel/code/build/src/CMakeFiles/detectFeatures.dir
+/home/yanjiasen4/pic2model/PictureToModel/code/build/src/CMakeFiles/generate_pointcloud.dir
+/home/yanjiasen4/pic2model/PictureToModel/code/build/src/CMakeFiles/joinPointCloud.dir
+/home/yanjiasen4/pic2model/PictureToModel/code/build/src/CMakeFiles/main.dir
+/home/yanjiasen4/pic2model/PictureToModel/code/build/src/CMakeFiles/slambase.dir
+/home/yanjiasen4/pic2model/PictureToModel/code/build/src/CMakeFiles/testpcd.dir
