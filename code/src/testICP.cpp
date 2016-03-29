@@ -52,7 +52,9 @@ int main(int argc, char **argv)
 	icp.setMaximumIterations(300);
     icp.align(*cloud_source_registration);
 	Eigen::Matrix4f transformation = icp.getFinalTransformation();
-	std::cout << transformation << std::endl;
+    double score = icp.getFitnessScore();
+	std::cout << transformation << std::endl
+              << "fitness score: " << score << std::endl; 
 
     pcl::visualization::PCLVisualizer viewer( "viewer" );
     pcl::visualization::PointCloudColorHandlerCustom<pcl::PointXYZ> src_r_h(cloud_source_registration, 255, 0, 0);
