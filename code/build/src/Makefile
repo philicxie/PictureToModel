@@ -169,6 +169,20 @@ slambase/fast:
 .PHONY : slambase/fast
 
 # Convenience name for target.
+src/CMakeFiles/testICP.dir/rule:
+	cd /home/yanjiasen4/pic2model/PictureToModel/code/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/testICP.dir/rule
+.PHONY : src/CMakeFiles/testICP.dir/rule
+
+# Convenience name for target.
+testICP: src/CMakeFiles/testICP.dir/rule
+.PHONY : testICP
+
+# fast build rule for target.
+testICP/fast:
+	cd /home/yanjiasen4/pic2model/PictureToModel/code/build && $(MAKE) -f src/CMakeFiles/testICP.dir/build.make src/CMakeFiles/testICP.dir/build
+.PHONY : testICP/fast
+
+# Convenience name for target.
 src/CMakeFiles/testpcd.dir/rule:
 	cd /home/yanjiasen4/pic2model/PictureToModel/code/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/testpcd.dir/rule
 .PHONY : src/CMakeFiles/testpcd.dir/rule
@@ -302,6 +316,30 @@ slamBase.cpp.s:
 	cd /home/yanjiasen4/pic2model/PictureToModel/code/build && $(MAKE) -f src/CMakeFiles/slambase.dir/build.make src/CMakeFiles/slambase.dir/slamBase.cpp.s
 .PHONY : slamBase.cpp.s
 
+testICP.o: testICP.cpp.o
+.PHONY : testICP.o
+
+# target to build an object file
+testICP.cpp.o:
+	cd /home/yanjiasen4/pic2model/PictureToModel/code/build && $(MAKE) -f src/CMakeFiles/testICP.dir/build.make src/CMakeFiles/testICP.dir/testICP.cpp.o
+.PHONY : testICP.cpp.o
+
+testICP.i: testICP.cpp.i
+.PHONY : testICP.i
+
+# target to preprocess a source file
+testICP.cpp.i:
+	cd /home/yanjiasen4/pic2model/PictureToModel/code/build && $(MAKE) -f src/CMakeFiles/testICP.dir/build.make src/CMakeFiles/testICP.dir/testICP.cpp.i
+.PHONY : testICP.cpp.i
+
+testICP.s: testICP.cpp.s
+.PHONY : testICP.s
+
+# target to generate assembly for a file
+testICP.cpp.s:
+	cd /home/yanjiasen4/pic2model/PictureToModel/code/build && $(MAKE) -f src/CMakeFiles/testICP.dir/build.make src/CMakeFiles/testICP.dir/testICP.cpp.s
+.PHONY : testICP.cpp.s
+
 testpcd.o: testpcd.cpp.o
 .PHONY : testpcd.o
 
@@ -339,6 +377,7 @@ help:
 	@echo "... main"
 	@echo "... rebuild_cache"
 	@echo "... slambase"
+	@echo "... testICP"
 	@echo "... testpcd"
 	@echo "... detectFeatures.o"
 	@echo "... detectFeatures.i"
@@ -355,6 +394,9 @@ help:
 	@echo "... slamBase.o"
 	@echo "... slamBase.i"
 	@echo "... slamBase.s"
+	@echo "... testICP.o"
+	@echo "... testICP.i"
+	@echo "... testICP.s"
 	@echo "... testpcd.o"
 	@echo "... testpcd.i"
 	@echo "... testpcd.s"

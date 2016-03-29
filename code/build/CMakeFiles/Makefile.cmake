@@ -91,5 +91,6 @@ SET(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/joinPointCloud.dir/DependInfo.cmake"
   "src/CMakeFiles/main.dir/DependInfo.cmake"
   "src/CMakeFiles/slambase.dir/DependInfo.cmake"
+  "src/CMakeFiles/testICP.dir/DependInfo.cmake"
   "src/CMakeFiles/testpcd.dir/DependInfo.cmake"
   )

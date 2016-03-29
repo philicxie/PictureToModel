@@ -13,7 +13,7 @@ using namespace std;
 
 // 定义点云类型
 typedef pcl::PointXYZRGBA PointT;
-typedef pcl::PointCloud<PointT> PointCloud; 
+typedef pcl::PointCloud<PointT> PointCloud;
 
 // 相机内参
 const double camera_factor = 1000;
@@ -22,19 +22,29 @@ const double camera_cy = 253.5;
 const double camera_fx = 518.0;
 const double camera_fy = 519.0;
 
-// 主函数 
+void usage()
+{
+    cout<<"./generatePointCloud [rgbd image name] [depth image name] [output image name]\n"<<endl;
+}
+
+// 主函数
 int main( int argc, char** argv )
 {
-    // 读取./data/rgb.png和./data/depth.png，并转化为点云
-
+    usage();
     // 图像矩阵
     cv::Mat rgb, depth;
     // 使用cv::imread()来读取图像
     // API: http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html?highlight=imread#cv2.imread
-    rgb = cv::imread( "./data/rgb.png" );
+    if(argc != 4)
+    {
+        printf("error usage!\n");
+        return 0;
+    }
+
+    rgb = cv::imread( argv[1] );
     // rgb 图像是8UC3的彩色图像
     // depth 是16UC1的单通道图像，注意flags设置-1,表示读取原始数据不做任何修改
-    depth = cv::imread( "./data/depth.png", -1 );
+    depth = cv::imread( argv[2], -1 );
 
     // 点云变量
     // 使用智能指针，创建一个空点云。这种指针用完会自动释放。
@@ -55,7 +65,7 @@ int main( int argc, char** argv )
             p.z = double(d) / camera_factor;
             p.x = (n - camera_cx) * p.z / camera_fx;
             p.y = (m - camera_cy) * p.z / camera_fy;
-            
+
             // 从rgb图像中获取它的颜色
             // rgb是三通道的BGR格式图，所以按下面的顺序获取颜色
             p.b = rgb.ptr<uchar>(m)[n*3];
@@ -70,7 +80,7 @@ int main( int argc, char** argv )
     cloud->width = cloud->points.size();
     cout<<"point cloud size = "<<cloud->points.size()<<endl;
     cloud->is_dense = false;
-    pcl::io::savePCDFile( "./data/pointcloud.pcd", *cloud );
+    pcl::io::savePCDFile( argv[3], *cloud );
     // 清除数据并退出
     cloud->points.clear();
     cout<<"Point cloud saved."<<endl;

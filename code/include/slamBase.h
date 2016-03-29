@@ -7,7 +7,7 @@
  ************************************************************************/
 # pragma once
 
-// 各种头文件 
+// 各种头文件
 // C++标准库
 #include <fstream>
 #include <vector>
@@ -30,8 +30,8 @@ typedef pcl::PointXYZRGBA PointT;
 typedef pcl::PointCloud<PointT> PointCloud;
 
 // 相机内参结构
-struct CAMERA_INTRINSIC_PARAMETERS 
-{ 
+struct CAMERA_INTRINSIC_PARAMETERS
+{
     double cx, cy, fx, fy, scale;
 };
 

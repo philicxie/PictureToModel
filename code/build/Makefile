@@ -164,6 +164,19 @@ slambase/fast:
 .PHONY : slambase/fast
 
 #=============================================================================
+# Target rules for targets named testICP
+
+# Build rule for target.
+testICP: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testICP
+.PHONY : testICP
+
+# fast build rule for target.
+testICP/fast:
+	$(MAKE) -f src/CMakeFiles/testICP.dir/build.make src/CMakeFiles/testICP.dir/build
+.PHONY : testICP/fast
+
+#=============================================================================
 # Target rules for targets named testpcd
 
 # Build rule for target.
@@ -189,6 +202,7 @@ help:
 	@echo "... joinPointCloud"
 	@echo "... main"
 	@echo "... slambase"
+	@echo "... testICP"
 	@echo "... testpcd"
 .PHONY : help
 

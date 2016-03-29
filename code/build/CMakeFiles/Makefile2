@@ -61,6 +61,7 @@ src/all: src/CMakeFiles/generate_pointcloud.dir/all
 src/all: src/CMakeFiles/joinPointCloud.dir/all
 src/all: src/CMakeFiles/main.dir/all
 src/all: src/CMakeFiles/slambase.dir/all
+src/all: src/CMakeFiles/testICP.dir/all
 src/all: src/CMakeFiles/testpcd.dir/all
 .PHONY : src/all
 
@@ -70,6 +71,7 @@ src/clean: src/CMakeFiles/generate_pointcloud.dir/clean
 src/clean: src/CMakeFiles/joinPointCloud.dir/clean
 src/clean: src/CMakeFiles/main.dir/clean
 src/clean: src/CMakeFiles/slambase.dir/clean
+src/clean: src/CMakeFiles/testICP.dir/clean
 src/clean: src/CMakeFiles/testpcd.dir/clean
 .PHONY : src/clean
 
@@ -253,13 +255,48 @@ clean: src/CMakeFiles/slambase.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target src/CMakeFiles/testICP.dir
+
+# All Build rule for target.
+src/CMakeFiles/testICP.dir/all:
+	$(MAKE) -f src/CMakeFiles/testICP.dir/build.make src/CMakeFiles/testICP.dir/depend
+	$(MAKE) -f src/CMakeFiles/testICP.dir/build.make src/CMakeFiles/testICP.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/yanjiasen4/pic2model/PictureToModel/code/build/CMakeFiles  6
+	@echo "Built target testICP"
+.PHONY : src/CMakeFiles/testICP.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/testICP.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/testICP.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yanjiasen4/pic2model/PictureToModel/code/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/testICP.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yanjiasen4/pic2model/PictureToModel/code/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/testICP.dir/rule
+
+# Convenience name for target.
+testICP: src/CMakeFiles/testICP.dir/rule
+.PHONY : testICP
+
+# clean rule for target.
+src/CMakeFiles/testICP.dir/clean:
+	$(MAKE) -f src/CMakeFiles/testICP.dir/build.make src/CMakeFiles/testICP.dir/clean
+.PHONY : src/CMakeFiles/testICP.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/testICP.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target src/CMakeFiles/testpcd.dir
 
 # All Build rule for target.
 src/CMakeFiles/testpcd.dir/all:
 	$(MAKE) -f src/CMakeFiles/testpcd.dir/build.make src/CMakeFiles/testpcd.dir/depend
 	$(MAKE) -f src/CMakeFiles/testpcd.dir/build.make src/CMakeFiles/testpcd.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/yanjiasen4/pic2model/PictureToModel/code/build/CMakeFiles  6
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/yanjiasen4/pic2model/PictureToModel/code/build/CMakeFiles  7
 	@echo "Built target testpcd"
 .PHONY : src/CMakeFiles/testpcd.dir/all
 
