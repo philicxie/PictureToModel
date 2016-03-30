@@ -4,7 +4,7 @@ From the 12th IPP projects of SJTU
 ## Install
 * OS: Ubuntu14.04.4 LTS (or other linux core system)
 * Hardware: Kinect 1/2
-also, you should install some integrant lib such as `opencv`, `pcl` and `g2o`. 
+also, you should install some integrant lib such as `opencv`, `pcl` and `g2o`.   
 `sudo apt-get install git cmake`
 1. install `opencv` 2.4
 then download source of [opencv](http://opencv.org/). It seems that opencv3.0 hasn't good compability so please download the 2.4 version.
