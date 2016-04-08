@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -O2 -g -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/PicCache.dir/PicCache.cpp.o  -o PicCache  /usr/local/lib/libfreenect2.dylib -lpthread 

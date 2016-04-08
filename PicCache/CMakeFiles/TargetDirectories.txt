@@ -1,0 +1,3 @@
+/Users/philic/GitHub/PictureToModel/PicCache/CMakeFiles/edit_cache.dir
+/Users/philic/GitHub/PictureToModel/PicCache/CMakeFiles/rebuild_cache.dir
+/Users/philic/GitHub/PictureToModel/PicCache/CMakeFiles/PicCache.dir
