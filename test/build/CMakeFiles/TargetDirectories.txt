@@ -1,0 +1,5 @@
+/Users/philic/GitHub/PictureToModel/test/build/CMakeFiles/edit_cache.dir
+/Users/philic/GitHub/PictureToModel/test/build/CMakeFiles/rebuild_cache.dir
+/Users/philic/GitHub/PictureToModel/test/build/src/CMakeFiles/edit_cache.dir
+/Users/philic/GitHub/PictureToModel/test/build/src/CMakeFiles/rebuild_cache.dir
+/Users/philic/GitHub/PictureToModel/test/build/src/CMakeFiles/test.dir

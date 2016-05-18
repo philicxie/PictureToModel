@@ -1,0 +1,1 @@
+g++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/test.dir/test.cpp.o  -o ../../bin/test  -L/Users/philic/GitHub/PictureToModel/test/lib  

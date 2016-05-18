@@ -1,1 +1,1 @@
-g++     -Wno-deprecated -g     CMakeFiles/main.dir/main.cpp.o  -o ../../bin/main  -L/home/yanjiasen4/pic2model/PictureToModel/code/lib -rdynamic 
+g++     -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/main.dir/main.cpp.o  -o ../../bin/main  -L/Users/philic/GitHub/PictureToModel/code/lib  

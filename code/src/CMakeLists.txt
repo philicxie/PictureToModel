@@ -30,16 +30,16 @@ TARGET_LINK_LIBRARIES( detectFeatures
     ${OpenCV_LIBS}
     ${PCL_LIBRARIES} )
 
-ADD_EXECUTABLE( joinPointCloud joinPointCloud.cpp)
-TARGET_LINK_LIBRARIES( joinPointCloud
-    slambase
-    ${OpenCV_LIBS}
-    ${PCL_LIBRARIES} )
+#ADD_EXECUTABLE( joinPointCloud joinPointCloud.cpp)
+#TARGET_LINK_LIBRARIES( joinPointCloud
+#    slambase
+#    ${OpenCV_LIBS}
+#    ${PCL_LIBRARIES} )
 
-ADD_EXECUTABLE( testpcd testpcd.cpp)
-TARGET_LINK_LIBRARIES( testpcd
-    ${PCL_LIBRARIES} )
+#ADD_EXECUTABLE( testpcd testpcd.cpp)
+#TARGET_LINK_LIBRARIES( testpcd
+#    ${PCL_LIBRARIES} )
 
-ADD_EXECUTABLE( testICP testICP.cpp)
-TARGET_LINK_LIBRARIES( testICP
-    ${PCL_LIBRARIES} )
+#ADD_EXECUTABLE( testICP testICP.cpp)
+#TARGET_LINK_LIBRARIES( testICP
+#    ${PCL_LIBRARIES} )
